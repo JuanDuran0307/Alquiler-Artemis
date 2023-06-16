@@ -62,7 +62,7 @@ $routesArray=array_filter($routesArray);
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <?php if (!empty($routesArray[5])) {
+    <?php if (!empty($rohutesdgdgf2sArray[5])) {
       if($routesArray[5]=="clinicHistory"||
          $routesArray[5]=="interviews"||
          $routesArray[5]=="users"||
