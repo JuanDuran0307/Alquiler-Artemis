@@ -23,7 +23,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/" class="nav-link
+                <a href="/SkylAb-176/Alquiler-Artemis/Alquiler/" class="nav-link
                 <?php if ($routesArray[5]==""):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-home"></i>
@@ -33,12 +33,12 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/clinicHistory" class="nav-link
+                <a href="/SkylAb-176/Alquiler-Artemis/Alquiler/users" class="nav-link
                 <?php if ($routesArray[5]=="clinicHistory"):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-hospital"></i>
                     <p>
-                        Clinic History
+                        Lsta 2
                     </p>
                 </a>
             </li>
