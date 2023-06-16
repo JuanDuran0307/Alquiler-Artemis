@@ -3,7 +3,7 @@
 
         public function index ()
         {
-            include "views/pages/template.php";
+            include "views/template.php";
         }
     }
 ?>

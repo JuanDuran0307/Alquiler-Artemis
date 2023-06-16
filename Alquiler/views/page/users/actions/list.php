@@ -1,12 +1,16 @@
-<?php
-$url = "localhost/ArTeM01-055/pSYCHOLOGY/apirest/controllers/campus.php?op=GetAll";
+<?php 
+$url = "http://localhost/ArTeM01-052/v1/psychology/apiRest/controles/campers.php?op=GetAll";
 $curl = curl_init();
-curl_setopt($curl,CURLOPT_URL,$url);
-curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
-
+curl_setopt($curl, CURLOPT_URL,$url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER,1);
 $output = json_decode(curl_exec($curl));
 
+
+
+
 ?>
+
+
 <div class="card">
               <div class="card-header">
                 <h3 class="card-title">DataTable with default features</h3>
@@ -24,9 +28,8 @@ $output = json_decode(curl_exec($curl));
                   </tr>
                   </thead>
                   <tbody>
-                    <?php
-                        foreach($output as $out)
-                        {
+                    <?php 
+                    foreach ($output as $out) {
                     ?>
                   <tr>
                     <td><?php echo $out->nombre; ?></td>
@@ -36,8 +39,7 @@ $output = json_decode(curl_exec($curl));
                     <td>Win 95+</td>
                     <td> 4</td>
                     <td>X</td>
-                  </tr>
-                  <?php }?>
+                  </tr><?php } ?>
                   <tr>
                     <td>Trident</td>
                     <td>Internet
@@ -50,12 +52,13 @@ $output = json_decode(curl_exec($curl));
                   <tr>
                     <td>Trident</td>
                     <td>Internet
-                      Explorer 5.0
+                      Explorer 5.5
                     </td>
                     <td>Win 95+</td>
-                    <td>6</td>
-                    <td>C</td>
+                    <td>5.5</td>
+                    <td>A</td>
                   </tr>
+
                   <tr>
                     <td>Other browsers</td>
                     <td>All others</td>
@@ -77,7 +80,7 @@ $output = json_decode(curl_exec($curl));
               </div>
               <!-- /.card-body -->
             </div>
-
+</div>
 
 <script>
   $(function () {
@@ -85,5 +88,7 @@ $output = json_decode(curl_exec($curl));
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+
   });
 </script>
+

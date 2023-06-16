@@ -1,12 +1,8 @@
-<?php
-  /* capturas las rutas de la url */
-
-  $routesArray = explode("/", $_SERVER['REQUEST_URI']);
-  $routesArray = array_filter($routesArray);
-
-
+<?php 
+/* caturar ruta de la url */
+$routesArray= explode("/",$_SERVER['REQUEST_URI'] );
+$routesArray=array_filter($routesArray);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +19,11 @@
   <link rel="stylesheet" href="views/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="views/assets/plugins/adminlte/css/adminlte.min.css">
+  <!-- DataTables -->
   <link rel="stylesheet" href="views/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="views/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="views/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
   <!-- jQuery -->
   <script src="views/assets/plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
@@ -47,59 +45,53 @@
   <script src="views/assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
   <script src="views/assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
   <script src="views/assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-  <!-- Theme style -->
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <?php
-  include "views/modules/navbar.php";
-  ?>
-    <?php
-  include "views/modules/aside.php";
-  ?>
+    <?php 
+    include "views/modules/navbar.php"
+    ?>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
- 
+  <?php 
+    include "views/modules/sidebar.php"
+    ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-
-
-  <!-- ?php echo  "<pre>";
-  print_r($routesArray);
-   echo "<pre>"; ?> -->
-  <?php 
-    if (!empty($routesArray[4])){
-      if($routesArray[4]== "clinicHistory" ||
-          $routesArray[4]== "interviews" ||
-          $routesArray[4]== "psychologist" ||
-          $routesArray[4]== "Treatment" ||
-          $routesArray[4]== "Users"){
-            include ("views/pages/".$routesArray[4]."/".$routesArray[4].".php");
-          }
+    <?php if (!empty($routesArray[5])) {
+      if($routesArray[5]=="clinicHistory"||
+         $routesArray[5]=="interviews"||
+         $routesArray[5]=="users"||
+         $routesArray[5]=="psycology"||
+         $routesArray[5]=="treatment"
+      ){
+        include "views/page/".$routesArray[5]."/".$routesArray[5].".php";
+      }
     }
     else{
-      include "views/pages/Home/Home.php";
+      include "views/page/home/home.php";
     }
-
-  ?>
-
+    
+    ?>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
-<?php include "views/modules/footer.php";?>
+  <?php include "views/modules/footer.php";?>
+  
 
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
-
-<!-- AdminLTE App -->
-<!-- AdminLTE for demo purposes -->
 
 </body>
 </html>
