@@ -23,7 +23,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/" class="nav-link
+                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/" class="nav-link
                 <?php if ($routesArray[5]==""):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-home"></i>
@@ -32,18 +32,9 @@
                     </p>
                 </a>
             </li>
+   
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/clinicHistory" class="nav-link
-                <?php if ($routesArray[5]=="clinicHistory"):?>active<?php endif?>
-                ">
-                    <i class="nav-icon fa fa-hospital"></i>
-                    <p>
-                        Clinic History
-                    </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/interviews" class="nav-link
+                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/interviews" class="nav-link
                 <?php if ($routesArray[5]=="interviews"):?>active<?php endif?>
                   ">
                     <i class="nav-icon fa fa-file"></i>
@@ -53,17 +44,17 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/users" class="nav-link
+                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/user_empleado_obras" class="nav-link
                 <?php if ($routesArray[5]=="users"):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-user"></i>
                     <p>
-                        Users
+                        Users_empleados_obras
                     </p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/psycology" class="nav-link
+                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/" class="nav-link
                 <?php if ($routesArray[5]=="psycology"):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-user-circle"></i>

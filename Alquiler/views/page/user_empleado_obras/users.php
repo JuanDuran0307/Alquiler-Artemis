@@ -7,14 +7,14 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>
-              User
+              Users_empleados_obras
             </h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="psychology/psychology/">Home</a></li>
               
-              <li class="breadcrumb-item active">Users</li>
+              <li class="breadcrumb-item active">users</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,4 @@
     <!-- Main content -->
     <section class="content">
 
-      <div class="container-fluid">
-        <?php include "actions/list.php"; ?>
-      </div>
     </section>
