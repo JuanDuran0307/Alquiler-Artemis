@@ -1,0 +1,83 @@
+    /* private $id
+    private $producto_id;
+    private $CantidadInicial;
+    private $CantidadIngresos;
+    private $CantidadSalidas;
+    private $CantidadFinal;
+    private $FechaInventario;
+    private $TipoOperacion;  */ 
+
+    /* public function __construct($id=0,$producto_id='', $CantidadInicial='', $CantidadIngresos='', $CantidadSalidas='', $CantidadFinal = '', $FechaInventario='', $TipoOperacion=''){
+        $this->id = $id;
+        $this->producto_id = $producto_id;
+        $this->CantidadInicial = $CantidadInicial;
+        $this->CantidadIngresos = $CantidadIngresos;
+        $this->CantidadSalidas = $CantidadSalidas;
+        $this->CantidadFinal = $CantidadFinal;
+        $this->FechaInventario = $FechaInventario;
+        $this->TipoOperacion = $TipoOperacion;
+    } */
+
+    /* function set_id($id){
+        $this->id=$id;
+    }
+
+    function get_id(){
+        return $this->id;
+    }
+
+    function set_producto_id($producto_id){
+        $this->producto_id=$producto_id;
+    }
+
+    function get_producto_id(){
+        return $this->producto_id;
+    }
+
+    function set_CantidadInicial($CantidadInicial){
+        $this->CantidadInicial=$CantidadInicial;
+    }
+
+    function get_CantidadInicial(){
+        return $this->CantidadInicial;
+    }
+
+    function set_CantidadIngresos($CantidadIngresos){
+        $this->CantidadIngresos=$CantidadIngresos;
+    }
+
+    function get_CantidadIngresos(){
+        return $this->CantidadIngresos;
+    }
+
+    function set_CantidadSalidas($CantidadSalidas){
+        $this->CantidadSalidas=$CantidadSalidas;
+    }
+
+    function get_CantidadSalidas(){
+        return $this->CantidadSalidas;
+    }
+
+    function set_CantidadFinal($CantidadFinal){
+        $this->CantidadFinal=$CantidadFinal;
+    }
+
+    function get_CantidadFinal(){
+        return $this->CantidadFinal;
+    }
+
+    function set_FechaInventario($FechaInventario){
+        $this->FechaInventario=$FechaInventario;
+    }
+
+    function get_FechaInventario(){
+        return $this->FechaInventario;
+    }
+
+    function set_TipoOperacion($TipoOperacion){
+        $this->TipoOperacion=$TipoOperacion;
+    }
+
+    function get_TipoOperacion(){
+        return $this->TipoOperacion;
+    } */

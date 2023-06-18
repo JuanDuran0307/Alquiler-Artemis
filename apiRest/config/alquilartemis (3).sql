@@ -101,6 +101,7 @@ CREATE TABLE `entrada_detalle` (
 --
 
 CREATE TABLE `inventario` (
+  `id` int NOT NULL,
   `producto_id` int NOT NULL,
   `CantidadInicial` int NOT NULL,
   `CantidadIngresos` int NOT NULL,

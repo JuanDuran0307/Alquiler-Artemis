@@ -20,9 +20,22 @@
     </section>
 
     <!-- Main content -->
+    
     <section class="content">
 
-      <div class="container-fluid">
-        <?php include "actions/list.php"; ?>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <?php include "actions/new.php"; ?>
+          </div>
+          <div class="col">
+            <?php include "actions/list.php"; ?>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <?php include "actions/list2.php"; ?>
+          </div>
+        </div>
       </div>
     </section>
