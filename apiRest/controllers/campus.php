@@ -1,11 +1,8 @@
 <?php
-header("content-Type: aplication/json");
-ini_set("display_errors" , 1);
-ini_set("display_startup" , 1);
 
-error_reporting(E_ALL);
+header("content-Type: application/json");
 
-require_once("../config/conectar.php");
+require_once("../config/api.php");
 require_once("../models/Camper.php");
 
 $camper = new Camper();

@@ -14,7 +14,7 @@
         }
 
         public function set_name(){
-            return $this->db-> query("SET NAMES 'utf8'");
+            return $this->db->query("SET NAMES 'utf8'");
         }
 
 

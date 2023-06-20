@@ -1,7 +1,7 @@
 <?php 
 /* caturar ruta de la url */
 $routesArray= explode("/",$_SERVER['REQUEST_URI'] );
-$routesArray=array_filter($routesArray);
+$routesArray=  array_filter($routesArray);
 ?>
 
 <!DOCTYPE html>
@@ -62,15 +62,14 @@ $routesArray=array_filter($routesArray);
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <?php if (!empty($rohutesdgdgf2sArray[5])) {
-      if($routesArray[5]=="clinicHistory"||
-         $routesArray[5]=="interviews"||
-         $routesArray[5]=="users"||
-         $routesArray[5]=="psycology"||
-         $routesArray[5]=="treatment"
-      ){
-        include "views/page/".$routesArray[5]."/".$routesArray[5].".php";
-      }
+<?php 
+    if (!empty($routesArray[4])) {
+      if($routesArray[4]=="entrada"||
+         $routesArray[4]=="salida"||
+         $routesArray[4]=="user_empleado_obras")
+        {
+          include "views/page/".$routesArray[4]."/".$routesArray[4].".php";
+        }
     }
     else{
       include "views/page/home/home.php";

@@ -22,9 +22,22 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
+
+
+              <li class="nav-item">
+                <a href="/ArTeM01-055/v1/Alquiler-Artemis/Alquiler/entrada" class="nav-link
+                <?php if ($routesArray[4]=="entrada"):?>active<?php endif?>
+                ">
+                    <i class="nav-icon fa fa-user-circle"></i>
+                    <p>
+                        entrada
+                    </p>
+                </a>
+            </li>
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/" class="nav-link
-                <?php if ($routesArray[5]==""):?>active<?php endif?>
+                <a href="/ArTeM01-055/Alquiler-Artemis/Alquiler/" class="nav-link
+                <?php if ($routesArray[4]==""):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-home"></i>
                     <p>
@@ -32,20 +45,23 @@
                     </p>
                 </a>
             </li>
-   
+
+
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/interviews" class="nav-link
-                <?php if ($routesArray[5]=="interviews"):?>active<?php endif?>
-                  ">
-                    <i class="nav-icon fa fa-file"></i>
+                <a href="/ArTeM01-055/Alquiler-Artemis/Alquiler/salida" class="nav-link
+                <?php if ($routesArray[4]=="salida"):?>active<?php endif?>
+                ">
+                    <i class="nav-icon fa fa-heartbeat"></i>
                     <p>
-                        Interviews
+                        salida y entrada
                     </p>
                 </a>
             </li>
+   
+
             <li class="nav-item">
-                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/user_empleado_obras" class="nav-link
-                <?php if ($routesArray[5]=="users"):?>active<?php endif?>
+                <a href="/ArTeM01-055/Alquiler-Artemis/Alquiler/user_empleado_obras" class="nav-link
+                <?php if ($routesArray[4]=="user_empleado_obras"):?>active<?php endif?>
                 ">
                     <i class="nav-icon fa fa-user"></i>
                     <p>
@@ -53,26 +69,9 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="/ArTeM01-052/v1/Alquiler-Artemis/Alquiler/" class="nav-link
-                <?php if ($routesArray[5]=="psycology"):?>active<?php endif?>
-                ">
-                    <i class="nav-icon fa fa-user-circle"></i>
-                    <p>
-                        Psycology
-                    </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="/ArTeM01-052/v1/psychology/psychology/treatment" class="nav-link
-                <?php if ($routesArray[5]=="treatment"):?>active<?php endif?>
-                ">
-                    <i class="nav-icon fa fa-heartbeat"></i>
-                    <p>
-                        Treatment
-                    </p>
-                </a>
-            </li>
+            
+ 
+ 
 
           <li class="nav-item">
             <a href="#" class="nav-link">
