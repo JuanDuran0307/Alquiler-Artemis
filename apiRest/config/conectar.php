@@ -5,10 +5,10 @@
 
         protected function Conectar(){
             try{
-                $conectar= $this->db = new PDO("mysql:local=localhost;dbname=alquilartemis","campus","campus2023");
+                $conectar= $this->db = new PDO("mysql:local=localhost;dbname=alquilarartemis","campus","campus2023");
                 return $conectar;
             }catch(Exception $e){
-                return $e -> getMessage();
+                return $e ->getMessage();
                 die();
             }
         }

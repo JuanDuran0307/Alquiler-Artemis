@@ -1,5 +1,5 @@
 <?php 
-$url = "http://localhost/Alquiler-Artemis/apiRest/controller/inventarioControlles.php?op=GetAll";
+$url = "http://localhost/ArTeM01-055/Alquiler-Artemis/apiRest/controller/inventarioControlles.php?op=GetAll";
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL,$url);

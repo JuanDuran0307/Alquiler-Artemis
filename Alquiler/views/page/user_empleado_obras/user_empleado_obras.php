@@ -23,5 +23,8 @@
 
     <!-- Main content -->
     <section class="content">
+      <?php include "actions/employeds.php" ?>
+
+      <?php include "actions/obras.php" ?>
 
     </section>

@@ -119,10 +119,10 @@ CREATE TABLE `inventario` (
 --
 
 INSERT INTO `inventario` (`producto_id`, `CantidadInicial`, `CantidadIngresos`, `CantidadSalidas`, `CantidadFinal`, `FechaInventario`, `TipoOperacion`) VALUES
-(1, 10, 10, 0, 10, '2023-06-16', 'revision'),
-(2, 10, 10, 0, 10, '2023-06-16', 'revision'),
-(3, 10, 10, 0, 10, '2023-06-16', 'revision'),
-(4, 10, 10, 0, 10, '2023-06-16', 'revision');
+( 1, 10, 10, 0, 10, '2023-06-16', 'revision'),
+( 2, 10, 10, 0, 10, '2023-06-16', 'revision'),
+( 3, 10, 10, 0, 10, '2023-06-16', 'revision'),
+( 4, 10, 10, 0, 10, '2023-06-16', 'revision');
 
 -- --------------------------------------------------------
 

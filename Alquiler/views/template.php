@@ -1,15 +1,22 @@
-<?php 
-/* caturar ruta de la url */
-$routesArray= explode("/",$_SERVER['REQUEST_URI'] );
-$routesArray=  array_filter($routesArray);
+
+<?php
+  /* capturas las rutas de la url */
+  ini_set("display_errors" , 1);
+    ini_set("display_startup_errors" , 1);
+    error_reporting(E_ALL);
+  $routesArray = explode("/", $_SERVER['REQUEST_URI']);
+  $routesArray = array_filter($routesArray);
+
+
 ?>
+  
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Fixed Sidebar</title>
+  <title>Alquiler Artemis</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -62,18 +69,21 @@ $routesArray=  array_filter($routesArray);
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+
+
 <?php 
     if (!empty($routesArray[4])) {
-      if($routesArray[4]=="entrada"||
-         $routesArray[4]=="salida"||
-         $routesArray[4]=="user_empleado_obras")
-        {
+      if($routesArray[4]== "entrada" ||
+         $routesArray[4]== "salida" ||
+         $routesArray[4]== "user_empleado_obras"){
           include "views/page/".$routesArray[4]."/".$routesArray[4].".php";
-        }
+        } 
+      
     }
     else{
       include "views/page/home/home.php";
-    }
+  }
+   
     
     ?>
     <!-- /.content -->

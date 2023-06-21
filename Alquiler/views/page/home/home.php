@@ -22,9 +22,6 @@
     <!-- Main content -->
     
     <section class="content">
-  <?php echo  "<pre>";
-  print_r($routesArray);
-   echo "<pre>"; ?>
 
       <div class="container">
         <div class="row">

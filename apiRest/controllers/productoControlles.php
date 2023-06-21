@@ -1,11 +1,5 @@
 <?php
-ini_set("display_errors" , 1);
-ini_set("display_startup" , 1);
-
-error_reporting(E_ALL);
-
-
-header('Content-Type: application/json');
+header("content-Type: aplication/json");
 
 require_once("../config/conectar.php");
 require_once("../models/Producto.php");
@@ -17,7 +11,7 @@ switch ($_GET["op"]){
 
     case "GetAll":
         $datos = $producto->get_producto();
-        echo json_encode($datos);   
+        echo json_encode($datos);
 
     break;
     case "Getid":
@@ -26,7 +20,7 @@ switch ($_GET["op"]){
     break;
     
     case "insert":
-        $datos = $producto->insert_producto($body["id"], $body["nombre"]);
+        $datos = $producto->insert_producto($body["id"], $body["nombre"] );
         echo json_encode("fue insertado correctamente");
     break;
 }
