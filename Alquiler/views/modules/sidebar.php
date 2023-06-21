@@ -25,8 +25,17 @@
                with font-awesome or any other icon font library -->
 
 
-
-              <li class="nav-item">
+            <li class="nav-item">
+                <a href="/ArTeM01-055/Alquiler-Artemis/Alquiler/alquilados" class="nav-link
+                <?php if($routesArray[4]== "alquilados"): ?> active <?php endif?>
+                ">
+                    <i class="nav-icon fa fa-user-circle"></i>
+                    <p>
+                        Alquilados
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="/ArTeM01-055/Alquiler-Artemis/Alquiler/entrada" class="nav-link
                 <?php if($routesArray[4]== "entrada"): ?> active <?php endif?>
                 ">

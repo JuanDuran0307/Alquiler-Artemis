@@ -73,7 +73,8 @@
 
 <?php 
     if (!empty($routesArray[4])) {
-      if($routesArray[4]== "entrada" ||
+      if($routesArray[4]== "alquilados" ||
+         $routesArray[4]== "entrada" ||
          $routesArray[4]== "salida" ||
          $routesArray[4]== "user_empleado_obras"){
           include "views/page/".$routesArray[4]."/".$routesArray[4].".php";
